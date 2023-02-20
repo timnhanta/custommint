@@ -1,0 +1,7 @@
+syntax = "proto3";
+package custommint.custommint;
+
+option go_package = "custommint/x/custommint/types";
+
+// Msg defines the Msg service.
+service Msg {}

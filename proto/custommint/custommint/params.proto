@@ -1,0 +1,12 @@
+syntax = "proto3";
+package custommint.custommint;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "custommint/x/custommint/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package custommint.custommint;
+
+import "gogoproto/gogo.proto";
+import "custommint/custommint/params.proto";
+
+option go_package = "custommint/x/custommint/types";
+
+// GenesisState defines the custommint module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
